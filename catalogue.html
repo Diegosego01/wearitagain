@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogue - Wear It Again">
+    <title>Catalogue - Wear It Again</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            color: rgb(0, 0, 0);
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: none; /* Remove the dark overlay */
+            z-index: 1;
+        }
+        nav {
+            background: #36c024;
+            color: rgb(36, 182, 46);
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        .brand-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .brand-item {
+            text-align: center;
+            width: 150px;
+        }
+        .brand-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: rgb(246, 248, 246);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        #brands {
+            background: url('images/secondary-image.jpg') no-repeat center center/cover; /* Add the secondary image */
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+        }
+        #brands h2, #brands .brand-list {
+            position: relative;
+            z-index: 2;
+        }
+        #brands::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg.jpg" alt="Wear It Again Logo" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h1>Our Catalogue</h1>
+        <p>Explore the brands we carry</p>
+    </header>
+    <nav>
+        <a href="wearitagain.html">Home</a> <!-- Link to the home page -->
+        <a href="#brands">Brands</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section id="brands">
+            <h2>Available Brands</h2>
+            <div class="brand-list">
+                <div class="brand-item">
+                   <a href="https://www.nike.com/?cp=81142676910_search_-Nike-o-458185766-1179777682250215-e-c&gclid=c74eaaa3810b13717233c2abe20a140e&gclsrc=3p.ds&msclkid=c74eaaa3810b13717233c2abe20a140e" target="_blank"><img src="images/nike-logo.jpg" alt="Nike Logo"></a>
+                    <p>Nike</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://www.adidas.com/us/men-new_arrivals" target="_blank"><img src="images/Adidas-logo.jpg" alt="adidas Logo"></a>
+                    <p>Adidas</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://us.puma.com/us/en/men/clothing/t-shirts-and-tops" target="_blank"><img src="images/Puma-logo.jpg" alt="puma Logo"></a>
+                    <p>Puma</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://www.newbalance.com/graphic-shop/?prefn1=gender&prefv1=Men|Unisex&ICID=PGP_PGP_MEN_ALL_CLOTHING_GUIDED_BUYING_GTEES_NB2840_M" target="_blank"><img src="images/new-balance-logo.jpg" alt="new balance Logo"></a>
+                    <p>New Balance</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://www.on.com/es-us/shop/mens/apparel" target="_blank"><img src="images/on-logo.jpg" alt="ON Logo"></a>
+                    <p>ON</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://www.underarmour.com/en-us/c/mens/" target="_blank"><img src="images/under-armor-logo.jpg" alt="under armor Logo"></a>
+                    <p>Under Armor</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://www.fila.com/women-all-clothing" target="_blank"><img src="images/fila-logo.jpg" alt="fila Logo"></a>
+                    <p>FILA</p>
+                </div>
+                <div class="brand-item">
+                    <a href="https://www.wilson.com/en-us/sportswear/women/new-arrivals" target="_blank"><img src="images/wilson-logo.jpg" alt="wilson Logo"></a>
+                    <p>Wilson</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Wear It Again. All rights reserved.</p>
+    </footer>
+</body>
+</html>

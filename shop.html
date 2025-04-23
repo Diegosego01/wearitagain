@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Now - Wear It Again">
+    <title>Shop Now - Wear It Again</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hidden-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #f4f4f4;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+        .hidden-menu h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .hidden-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .hidden-menu ul li {
+            margin: 0.5rem 0;
+        }
+        .hidden-menu ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        .hidden-menu ul li a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            z-index: 1100;
+        }
+        .menu-toggle:hover {
+            background: #45a049;
+        }
+        .main-content {
+            padding: 2rem;
+        }
+        .clothing-section {
+            margin-bottom: 2rem;
+        }
+        .clothing-section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .clothing-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .clothing-item {
+            text-align: center;
+            width: 150px;
+        }
+        .clothing-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .cart-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.hidden-menu');
+            if (menu.style.left === '0px') {
+                menu.style.left = '-250px';
+            } else {
+                menu.style.left = '0px';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg.jpg" alt="Wear It Again Logo" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h1>Shop Now</h1>
+        <p>Find the perfect second-hand clothing for you</p>
+        <!-- Shopping Cart Icon -->
+        <a href="cart.html" class="cart-icon">🛒 Cart</a>
+    </header>
+    <nav>
+        <a href="wearitagain.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <aside class="hidden-menu">
+        <h3>Clothing Types</h3>
+        <ul>
+            <li><a href="#tshirts">T-Shirts</a></li>
+            <li><a href="#pants">Pants</a></li>
+            <li><a href="#shorts">Shorts</a></li>
+            <li><a href="#underwear">Underwear</a></li>
+            <li><a href="#tops">Tops</a></li>
+            <li><a href="#socks">Socks</a></li>
+            <li><a href="#shoes">Shoes</a></li>
+            <li><a href="#hoodies">Hoodies</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <section id="tshirts" class="clothing-section">
+            <h2>Men's Apparel</h2>
+            <div class="clothing-list">
+                <div class="clothing-item">
+                    <img src="images/mens-image.jpg" alt="Men's Clothing">
+                    <p>Men's Clothing</p>
+                </div>
+            </div>
+        </section>
+        <section id="pants" class="clothing-section">
+            <h2>Women's Apparel</h2>
+            <div class="clothing-list">
+                <div class="clothing-item">
+                    <img src="images/women-image.jpg" alt="Women's Clothing">
+                    <p>Women's Clothing</p>
+                </div>
+            </div>
+        </section>
+        <section id="kids" class="clothing-section">
+            <h2>Kids' Apparel</h2>
+            <div class="clothing-list">
+                <div class="clothing-item">
+                    <img src="images/kids-image.jpg" alt="Kids' Clothing">
+                    <p>Kids' Clothing</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Wear It Again. All rights reserved.</p>
+    </footer>
+</body>
+</html>
